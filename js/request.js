@@ -35,9 +35,8 @@ const getData = async () => {
 
 getData();
 
-// const name = '김개똥';
-// const age = 23;
-// // const str = 'hello' + name + '님' + '나이는' + age + '세 입니다.';
-// const str = `hello ${name}님 나이는 ${age}세 입니다.`; // template literal
-// console.log(str);
-
+const name = '김개똥';
+const age = 23;
+// const str = 'hello' + name + '님' + '나이는' + age + '세 입니다.';
+const str = `hello ${name}님 나이는 ${age}세 입니다.`; // template literal
+console.log(str);
