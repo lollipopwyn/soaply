@@ -329,17 +329,15 @@ Insta Section Style
 }
 
 .insta-section .insta-id {
-font-size: var(--fs-small-text);
-display: flex;
-align-items: center;
-column-gap: var(--el-small);
+  font-size: var(--fs-small-text);
+  display: flex;
+  align-items: center;
+  column-gap: var(--el-small);
 }
 
 .insta-section .insta-id i {
-font-size: var(--fs-20);
+  font-size: var(--fs-20);
 }
-
-
 
 /************************************* 
 Footer Section Style

@@ -1,14 +1,16 @@
 const sliderWrapper = document.querySelector('.swiper-wrapper');
 
+const qnt = 4;
+
 const getData = async () => {
   await fetch(
-    'https://www.dabipyeung.com/soaply_backend/model/get_products.php?qnt=4'
+    `https://www.dabipyeung.com/soaply_backend/model/get_products.php?qnt=${qnt}`
   )
     .then((res) => {
       return res.json();
     })
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       let dataElement;
 
       data.map((item) => {
@@ -21,7 +23,7 @@ const getData = async () => {
             <div class="slider-text">
               <h4>${item.pro_name}</h4>
               <p>${item.pro_desc}</p>
-              <a href="#" class="common-btn">자세히 보기</a>
+              <a href="details.html?idx=${item.pro_idx}" class="common-btn">자세히 보기</a>
             </div>
           </div>
         `;
@@ -35,8 +37,8 @@ const getData = async () => {
 
 getData();
 
-const name = '김개똥';
-const age = 23;
-// const str = 'hello' + name + '님' + '나이는' + age + '세 입니다.';
-const str = `hello ${name}님 나이는 ${age}세 입니다.`; // template literal
-console.log(str);
+// const name = '김개똥';
+// const age = 23;
+// // const str = 'hello' + name + '님' + '나이는' + age + '세 입니다.';
+// const str = `hello ${name}님 나이는 ${age}세 입니다.`; // template literal
+// console.log(str);
